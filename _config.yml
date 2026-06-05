@@ -1,4 +1,27 @@
-title: My Blog
+title: metriccaution
 url: "https://metriccaution.github.io/"
+baseurl: ""
 description: "General thoughts about things."
+author:
+  name: David McGrath
+
 theme: minima
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed # auto-generates /feed.xml RSS feed
+  - jekyll-seo-tag
+
+timezone: Europe/London
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
