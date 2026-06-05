@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Text to Speech for for Content Consumption"
-date: 2024-03-03
+title: "Text to Speech for Content Consumption"
+date: 2024-03-04
 ---
 
-# Text to Speech for for Content Consumption
+# Text to Speech for Content Consumption
 
 Over the years, I've built up quite a lot of content that I've meant to read "some day", and I've also been trying to cut down on my screen time. A discussion [on HackerNews](https://news.ycombinator.com/item?id=39442882) prompted me to try out solving these two problems using text-to-speech (TTS) to listen to my reading list.
 
@@ -14,7 +14,7 @@ I've had moderate success with this (at least for some types of content - diagra
 
 I generally do most of my scripting in Python or Deno, so I wanted to have something available using one of these.
 
-Some exploration around the ecosystem makes [Piper](https://github.com/rhasspy/piper/tree/master) look like a good TTS package to use, as its fairly straight-forwards to use, has multiple voices available, and actually sounds fairly good.
+Some exploration around the ecosystem makes [Piper](https://github.com/rhasspy/piper/tree/master) look like a good TTS package to use, as it's fairly straight-forwards to use, has multiple voices available, and actually sounds fairly good.
 
 ```python
 from piper import PiperVoice
@@ -40,7 +40,7 @@ The `.wav` files output by Piper are (as-expected), pretty huge, but a very simp
 ffmpeg -i ./output.wav ./output.mp3
 ```
 
-Its probably possible to do something a little more refined, but this got me far enough!
+It's probably possible to do something a little more refined, but this got me far enough!
 
 ## Other Scaffolding
 
